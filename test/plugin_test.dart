@@ -4,7 +4,6 @@ import 'package:analyzer/file_system/file_system.dart';
 import 'package:analyzer/file_system/memory_file_system.dart';
 import 'package:analyzer_plugin/channel/channel.dart';
 import 'package:analyzer_plugin/protocol/protocol.dart' as protocol;
-import 'package:analyzer_plugin/protocol/protocol_common.dart' as protocol;
 import 'package:analyzer_plugin/protocol/protocol_generated.dart' as protocol;
 import 'package:angular_analyzer_plugin/plugin.dart';
 import 'package:angular_analyzer_plugin/src/angular_driver.dart';
@@ -262,14 +261,16 @@ class MyComponent {}
 
   // ignore: non_constant_identifier_names
   void test_navigation_html() async {
-    resourceProvider..newFile('/test/test.dart', r'''
+    resourceProvider
+      ..newFile('/test/test.dart', r'''
 import 'package:angular/angular.dart';
 @Component(
   selector: 'foo'
   templateUrl: 'test.html';
 )
 class MyComponent {}
-''')..newFile('/test/test.html', '');
+''')
+      ..newFile('/test/test.html', '');
 
     final driver = (plugin.driverForPath('/test/test.dart') as AngularDriver);
     await driver.requestDartResult('/test/test.dart');

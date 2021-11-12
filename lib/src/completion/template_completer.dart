@@ -330,6 +330,7 @@ class TemplateCompleter {
 
         if (includePlainAttributes && typeProvider != null) {
           if (typeProvider.stringType.isAssignableTo(input.setterType)) {
+            // if (TypeSystem().isAssignableTo(typeProvider.stringType, input.setterType)) {
             final relevance = input.setterType.displayName == 'String'
                 ? DART_RELEVANCE_DEFAULT
                 : DART_RELEVANCE_DEFAULT - 1;

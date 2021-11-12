@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:analyzer/context/context_root.dart';
+// import 'package:analyzer/context/context_root.dart';
+import 'package:analyzer/src/context/context_root.dart';
 import 'package:analyzer/file_system/file_system.dart';
 import 'package:analyzer/src/context/builder.dart';
 import 'package:analyzer/src/dart/analysis/driver.dart';
@@ -32,7 +33,7 @@ class AngularAnalyzerPlugin extends ServerPlugin
 
   @override
   String get contactInfo =>
-      'Please file issues at https://github.com/dart-lang/angular/issues';
+      'Please file issues at https://github.com/angulardart-community/nganalyzer/issues';
 
   @override
   List<String> get fileGlobsToAnalyze => <String>['*.dart', '*.html'];

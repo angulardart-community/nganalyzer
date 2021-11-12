@@ -110,7 +110,9 @@ class BuildStandardHtmlComponentsVisitor extends RecursiveAstVisitor {
       final namespace = unit.declaredElement.library.publicNamespace;
       final eventClass = namespace.get(type) as ClassElement;
       events[name] = MissingOutput(
-          name: name, eventType: eventClass.type, source: unit.element.source);
+          name: name,
+          eventType: eventClass.type,
+          source: unit.declaredElement.source);
     });
   }
 

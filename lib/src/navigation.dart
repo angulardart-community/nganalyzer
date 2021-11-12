@@ -2,7 +2,6 @@ import 'package:analyzer/dart/element/element.dart' as engine;
 import 'package:analyzer/src/dart/analysis/file_state.dart';
 import 'package:analyzer/src/generated/source.dart';
 import 'package:analyzer_plugin/protocol/protocol_common.dart' as protocol;
-import 'package:analyzer_plugin/protocol/protocol_constants.dart' as protocol;
 import 'package:analyzer_plugin/utilities/analyzer_converter.dart' as protocol;
 import 'package:analyzer_plugin/utilities/navigation/navigation.dart';
 import 'model.dart';

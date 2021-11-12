@@ -1,6 +1,4 @@
-import 'package:analyzer/dart/ast/ast.dart' as dart;
 import 'package:analyzer/dart/element/element.dart' as dart;
-import 'package:analyzer/dart/element/type.dart' as dart;
 import 'package:analyzer/src/generated/source.dart' show Source;
 import '../navigable.dart';
 import 'content_child.dart';

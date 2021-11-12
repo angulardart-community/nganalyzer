@@ -450,8 +450,7 @@ class AngularDriver
 
     final ast = HtmlTreeConverter(parser, source, tplErrorListener)
         .convertFromAstList(tplParser.rawAst)
-          ..accept(
-              NgContentRecorder(directive.ngContents, source, errorReporter));
+      ..accept(NgContentRecorder(directive.ngContents, source, errorReporter));
     final template = Template(directive, ast);
     directive.template = template;
     setIgnoredErrors(template, document);
@@ -543,8 +542,8 @@ class AngularDriver
 
           final ast = HtmlTreeConverter(parser, htmlSource, tplErrorListener)
               .convertFromAstList(tplParser.rawAst)
-                ..accept(NgContentRecorder(
-                    directive.ngContents, dartSource, errorReporter));
+            ..accept(NgContentRecorder(
+                directive.ngContents, dartSource, errorReporter));
           final template = Template(directive, ast);
           directive.template = template;
           setIgnoredErrors(template, document);
