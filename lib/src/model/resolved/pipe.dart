@@ -1,7 +1,7 @@
 import 'package:analyzer/dart/element/element.dart' as dart;
 import 'package:analyzer/dart/element/type.dart' as dart;
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/src/model/syntactic/pipe.dart'
+import 'package:nganalyzer/src/model/syntactic/pipe.dart'
     as syntactic;
 import 'package:meta/meta.dart';
 

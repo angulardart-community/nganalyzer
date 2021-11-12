@@ -1,6 +1,6 @@
 import 'package:analyzer/src/summary/api_signature.dart';
-import 'package:angular_analyzer_plugin/src/file_tracker.dart';
-import 'package:angular_analyzer_plugin/src/options.dart';
+import 'package:nganalyzer/src/file_tracker.dart';
+import 'package:nganalyzer/src/options.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 import 'package:test_reflective_loader/test_reflective_loader.dart';

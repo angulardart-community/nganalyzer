@@ -5,10 +5,10 @@ import 'package:analyzer/error/error.dart';
 import 'package:analyzer/src/dart/analysis/file_state.dart';
 import 'package:analyzer/src/generated/source.dart';
 import 'package:analyzer/src/generated/source_io.dart';
-import 'package:angular_analyzer_plugin/src/angular_driver.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/options.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_name_selector.dart';
+import 'package:nganalyzer/src/angular_driver.dart';
+import 'package:nganalyzer/src/model.dart';
+import 'package:nganalyzer/src/options.dart';
+import 'package:nganalyzer/src/selector/element_name_selector.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 

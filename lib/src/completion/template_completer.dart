@@ -5,16 +5,16 @@ import 'package:analyzer_plugin/protocol/protocol_common.dart'
     hide AnalysisError;
 import 'package:analyzer_plugin/utilities/completion/completion_core.dart';
 import 'package:analyzer_plugin/utilities/completion/relevance.dart';
-import 'package:angular_analyzer_plugin/src/completion/offset_contained.dart';
-import 'package:angular_analyzer_plugin/src/completion/request.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/and_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/attribute_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_name_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/or_selector.dart';
+import 'package:nganalyzer/src/completion/offset_contained.dart';
+import 'package:nganalyzer/src/completion/request.dart';
+import 'package:nganalyzer/ast.dart';
+import 'package:nganalyzer/src/model.dart';
+import 'package:nganalyzer/src/model/navigable.dart';
+import 'package:nganalyzer/src/selector.dart';
+import 'package:nganalyzer/src/selector/and_selector.dart';
+import 'package:nganalyzer/src/selector/attribute_selector.dart';
+import 'package:nganalyzer/src/selector/element_name_selector.dart';
+import 'package:nganalyzer/src/selector/or_selector.dart';
 
 /// Suggest angular/html (non-dart) completions for a single [Template].
 ///

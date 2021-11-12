@@ -1,8 +1,8 @@
 /// Most commonly used behavior for CSS selectors in the angular plugin.
-export 'package:angular_analyzer_plugin/src/selector/element_view.dart';
-export 'package:angular_analyzer_plugin/src/selector/parse_error.dart'
+export 'package:nganalyzer/src/selector/element_view.dart';
+export 'package:nganalyzer/src/selector/parse_error.dart'
     show SelectorParseError;
-export 'package:angular_analyzer_plugin/src/selector/parser.dart';
-export 'package:angular_analyzer_plugin/src/selector/selector.dart';
-export 'package:angular_analyzer_plugin/src/selector/match.dart';
-export 'package:angular_analyzer_plugin/src/selector/name.dart';
+export 'package:nganalyzer/src/selector/parser.dart';
+export 'package:nganalyzer/src/selector/selector.dart';
+export 'package:nganalyzer/src/selector/match.dart';
+export 'package:nganalyzer/src/selector/name.dart';

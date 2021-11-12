@@ -1,4 +1,4 @@
-import 'package:angular_analyzer_plugin/ast.dart';
+import 'package:nganalyzer/ast.dart';
 import 'package:test/test.dart';
 import 'package:test_reflective_loader/test_reflective_loader.dart';
 

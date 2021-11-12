@@ -8,9 +8,9 @@ import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/dart/ast/token.dart';
 import 'package:analyzer/src/dart/resolver/scope.dart';
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
+import 'package:nganalyzer/errors.dart';
+import 'package:nganalyzer/src/model.dart';
+import 'package:nganalyzer/src/summary/idl.dart';
 
 /// Link [SummarizedExportedIdentifer] into [Export]s.
 class ExportLinker {

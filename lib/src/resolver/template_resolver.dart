@@ -2,18 +2,18 @@ import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/generated/resolver.dart'
     show TypeProvider, TypeSystem;
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/options.dart';
-import 'package:angular_analyzer_plugin/src/resolver/dart_variable_manager.dart';
-import 'package:angular_analyzer_plugin/src/resolver/internal_variable.dart';
-import 'package:angular_analyzer_plugin/src/resolver/directive_resolver.dart';
-import 'package:angular_analyzer_plugin/src/resolver/component_content_resolver.dart';
-import 'package:angular_analyzer_plugin/src/resolver/prepare_scope_visitor.dart';
-import 'package:angular_analyzer_plugin/src/resolver/prepare_event_scope_visitor.dart';
-import 'package:angular_analyzer_plugin/src/resolver/single_scope_resolver.dart';
-import 'package:angular_analyzer_plugin/src/resolver/next_template_elements_search.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
+import 'package:nganalyzer/ast.dart';
+import 'package:nganalyzer/src/model.dart';
+import 'package:nganalyzer/src/options.dart';
+import 'package:nganalyzer/src/resolver/dart_variable_manager.dart';
+import 'package:nganalyzer/src/resolver/internal_variable.dart';
+import 'package:nganalyzer/src/resolver/directive_resolver.dart';
+import 'package:nganalyzer/src/resolver/component_content_resolver.dart';
+import 'package:nganalyzer/src/resolver/prepare_scope_visitor.dart';
+import 'package:nganalyzer/src/resolver/prepare_event_scope_visitor.dart';
+import 'package:nganalyzer/src/resolver/single_scope_resolver.dart';
+import 'package:nganalyzer/src/resolver/next_template_elements_search.dart';
+import 'package:nganalyzer/src/standard_components.dart';
 
 /// [TemplateResolver]s resolve [Template]s; entrypoint of resolution.
 class TemplateResolver {

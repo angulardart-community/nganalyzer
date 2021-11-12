@@ -3,8 +3,8 @@ import '../model.dart';
 import '../summary/idl.dart';
 import 'top_level_linker.dart';
 
-export 'package:angular_analyzer_plugin/src/link/eager_linker.dart';
-export 'package:angular_analyzer_plugin/src/link/lazy_linker.dart';
+export 'package:nganalyzer/src/link/eager_linker.dart';
+export 'package:nganalyzer/src/link/lazy_linker.dart';
 
 /// Link a [Pipe] with the specified [Linker] from its summary & element.
 Pipe linkPipe(List<SummarizedPipe> pipeSummaries, ClassElement element,

@@ -2,9 +2,9 @@ import 'package:analyzer/dart/element/element.dart' as dart;
 import 'package:analyzer/dart/element/type.dart' as dart;
 import 'package:analyzer/src/generated/source.dart' show SourceRange, Source;
 import '../navigable.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/input.dart'
+import 'package:nganalyzer/src/model/syntactic/input.dart'
     as syntactic;
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
+import 'package:nganalyzer/src/standard_components.dart';
 import 'package:meta/meta.dart';
 
 /// The resolved model for an Angular input.

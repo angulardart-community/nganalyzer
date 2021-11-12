@@ -23,15 +23,15 @@ import 'from_file_prefixed_error.dart';
 import 'link/directive_provider.dart';
 import 'link/link.dart';
 import 'model.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/ng_content.dart'
+import 'package:nganalyzer/src/model/syntactic/ng_content.dart'
     as syntactic;
-import 'package:angular_analyzer_plugin/src/options.dart';
-import 'package:angular_analyzer_plugin/src/resolver/template_resolver.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
-import 'package:angular_analyzer_plugin/src/summary/format.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
-import 'package:angular_analyzer_plugin/src/summary/summarize.dart';
-import 'package:angular_analyzer_plugin/src/syntactic_discovery.dart';
+import 'package:nganalyzer/src/options.dart';
+import 'package:nganalyzer/src/resolver/template_resolver.dart';
+import 'package:nganalyzer/src/standard_components.dart';
+import 'package:nganalyzer/src/summary/format.dart';
+import 'package:nganalyzer/src/summary/idl.dart';
+import 'package:nganalyzer/src/summary/summarize.dart';
+import 'package:nganalyzer/src/syntactic_discovery.dart';
 
 class AngularDriver
     implements AnalysisDriverGeneric, DirectiveProvider, FileHasher {

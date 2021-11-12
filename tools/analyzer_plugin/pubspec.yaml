@@ -1,0 +1,13 @@
+name: nganalyzer_plugin
+version: 1.0.0
+description: Entrypoint package for nganalyzer
+homepage: https://angulardart.xyz/
+repository: https://github.com/angulardart-community/nganalyzer
+publish_to: none
+
+environment:
+  sdk: ">=2.5.0-dev.1.0 <3.0.0"
+
+dependencies:
+  nganalyzer:
+    path: ../../

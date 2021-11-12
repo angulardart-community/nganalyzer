@@ -1,4 +1,4 @@
-import 'package:angular_analyzer_plugin/src/options.dart';
+import 'package:nganalyzer/src/options.dart';
 import 'package:test/test.dart';
 import 'package:test_reflective_loader/test_reflective_loader.dart';
 

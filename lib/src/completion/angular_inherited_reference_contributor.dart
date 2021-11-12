@@ -12,11 +12,11 @@ import 'package:analyzer_plugin/src/utilities/completion/optype.dart';
 import 'package:analyzer_plugin/utilities/completion/completion_core.dart';
 import 'package:analyzer_plugin/utilities/completion/inherited_reference_contributor.dart';
 import 'package:analyzer_plugin/utilities/completion/relevance.dart';
-import 'package:angular_analyzer_plugin/src/completion/request.dart';
-import 'package:angular_analyzer_plugin/src/completion/dart_resolve_result_shell.dart';
-import 'package:angular_analyzer_plugin/src/completion/local_variables_extractor.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
+import 'package:nganalyzer/src/completion/request.dart';
+import 'package:nganalyzer/src/completion/dart_resolve_result_shell.dart';
+import 'package:nganalyzer/src/completion/local_variables_extractor.dart';
+import 'package:nganalyzer/ast.dart';
+import 'package:nganalyzer/src/model.dart';
 
 /// Completion contributor for inherited references in the template.
 ///

@@ -1,9 +1,9 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import 'package:nganalyzer/ast.dart';
+import 'package:nganalyzer/src/model.dart';
+import 'package:nganalyzer/src/model/navigable.dart';
+import 'package:nganalyzer/src/selector.dart';
 import 'package:test/test.dart';
 import 'package:matcher/matcher.dart';
 

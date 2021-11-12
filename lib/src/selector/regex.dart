@@ -16,7 +16,7 @@
 /// a name and a value. Most match IDs correspond to a [TokenType], and the ones
 /// that don't are subgroups. Those group IDs are stored in the "subToken" IDs
 /// such as [subTokenUnquotedValue] and [subTokenOperator].
-import 'package:angular_analyzer_plugin/src/selector/tokenizer.dart';
+import 'package:nganalyzer/src/selector/tokenizer.dart';
 
 const Map<int, TokenType> matchIndexToToken = <int, TokenType>{
   1: TokenType.NotStart,

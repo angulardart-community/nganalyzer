@@ -7,7 +7,7 @@ import 'package:analyzer/src/dart/scanner/reader.dart';
 import 'package:analyzer/src/dart/scanner/scanner.dart';
 import 'package:analyzer/src/generated/parser.dart';
 import 'package:analyzer/src/source/source_resource.dart' show FileSource;
-import 'package:angular_analyzer_plugin/src/offsetting_constant_evaluator.dart';
+import 'package:nganalyzer/src/offsetting_constant_evaluator.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 import 'package:test_reflective_loader/test_reflective_loader.dart';

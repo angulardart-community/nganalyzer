@@ -7,10 +7,10 @@ import 'package:analyzer/src/dart/ast/token.dart'
     show SyntheticBeginToken, SyntheticToken;
 import 'package:analyzer_plugin/src/utilities/completion/completion_target.dart';
 import 'package:analyzer_plugin/utilities/completion/completion_core.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/src/converter.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
+import 'package:nganalyzer/ast.dart';
+import 'package:nganalyzer/src/converter.dart';
+import 'package:nganalyzer/src/model.dart';
+import 'package:nganalyzer/src/standard_components.dart';
 
 class AngularCompletionRequest extends CompletionRequest {
   final List<Template> templates;

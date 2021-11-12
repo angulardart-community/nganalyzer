@@ -25,6 +25,7 @@ import 'src/completion/request.dart';
 import 'src/navigation.dart';
 import 'src/navigation_request.dart';
 import 'src/options.dart';
+import 'src/version.dart';
 import 'package:meta/meta.dart';
 
 class AngularAnalyzerPlugin extends ServerPlugin
@@ -42,7 +43,7 @@ class AngularAnalyzerPlugin extends ServerPlugin
   String get name => 'Angular Analysis Plugin';
 
   @override
-  String get version => '1.0.0-alpha.0';
+  String get version => packageVersion;
 
   AngularDriver angularDriverForPath(String path) {
     final driver = super.driverForPath(path);
