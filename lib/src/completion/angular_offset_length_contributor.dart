@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:analyzer_plugin/utilities/completion/completion_core.dart';
-import 'package:angular_analyzer_plugin/src/completion/offset_contained.dart';
-import 'package:angular_analyzer_plugin/src/completion/request.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
+import 'offset_contained.dart';
+import 'request.dart';
+import '../../ast.dart';
 
 /// Sets the replacement range on the completion collector for the suggestions.
 ///

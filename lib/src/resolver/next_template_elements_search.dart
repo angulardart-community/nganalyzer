@@ -1,4 +1,4 @@
-import 'package:angular_analyzer_plugin/ast.dart';
+import '../../ast.dart';
 
 /// Find the immediately nested scopes within an [ElementInfo].
 ///

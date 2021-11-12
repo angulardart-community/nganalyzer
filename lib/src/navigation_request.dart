@@ -1,6 +1,6 @@
 import 'package:analyzer/file_system/file_system.dart';
 import 'package:analyzer_plugin/utilities/navigation/navigation.dart';
-import 'package:angular_analyzer_plugin/src/angular_driver.dart';
+import 'angular_driver.dart';
 
 class AngularNavigationRequest extends NavigationRequest {
   @override

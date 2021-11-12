@@ -1,9 +1,9 @@
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/content_child.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/input.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/output.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/top_level.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import '../navigable.dart';
+import 'content_child.dart';
+import 'input.dart';
+import 'output.dart';
+import '../syntactic/top_level.dart';
+import '../../selector.dart';
 
 /// Core behavior to directives and components, including functional directives,
 /// but excluding non directive parts of angular such as pipes and regular

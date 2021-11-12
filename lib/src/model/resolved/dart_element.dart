@@ -1,7 +1,8 @@
 import 'package:analyzer/dart/element/element.dart' as dart;
 import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
+
+import '../navigable.dart';
 
 /// A [Navigable] location in the code representing a [dart.Element].
 class DartElement implements Navigable {

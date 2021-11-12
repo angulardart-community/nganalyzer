@@ -1,6 +1,6 @@
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
+import 'model.dart';
 import 'package:angular_ast/angular_ast.dart' as ng_ast;
 
 /// Look for `<!-- @ngIgnoredErrors -->` and set the codes on [template].

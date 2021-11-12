@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:analyzer_plugin/utilities/completion/completion_core.dart';
-import 'package:angular_analyzer_plugin/src/completion/request.dart';
-import 'package:angular_analyzer_plugin/src/completion/template_completer.dart';
+import 'request.dart';
+import 'template_completer.dart';
 
 /// Computes angular autocompletions to contribute.
 class AngularCompletionContributor extends CompletionContributor {

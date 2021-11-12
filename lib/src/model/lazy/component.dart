@@ -1,11 +1,11 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/generated/source.dart' show Source;
-import 'package:angular_analyzer_plugin/src/model.dart' hide Component;
-import 'package:angular_analyzer_plugin/src/model.dart' as resolved;
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/ng_content.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import '../../model.dart' hide Component;
+import '../../model.dart' as resolved;
+import '../navigable.dart';
+import '../syntactic/ng_content.dart';
+import '../../selector.dart';
 
 /// A [Component] that can be matched by its [selector] and then lazy-loads.
 ///

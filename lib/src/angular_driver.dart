@@ -15,25 +15,15 @@ import 'package:analyzer/src/generated/source.dart';
 import 'package:analyzer/src/summary/api_signature.dart';
 import 'package:analyzer_plugin/utilities/completion/completion_core.dart';
 import 'package:crypto/crypto.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/angular_ast_extraction.dart';
-import 'package:angular_analyzer_plugin/src/converter.dart';
-import 'package:angular_analyzer_plugin/src/file_tracker.dart';
-import 'package:angular_analyzer_plugin/src/from_file_prefixed_error.dart';
-import 'package:angular_analyzer_plugin/src/link/directive_provider.dart';
-import 'package:angular_analyzer_plugin/src/link/link.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/annotated_class.dart'
-    as syntactic;
-import 'package:angular_analyzer_plugin/src/model/syntactic/component.dart'
-    as syntactic;
-import 'package:angular_analyzer_plugin/src/model/syntactic/directive_base.dart'
-    as syntactic;
+import '../errors.dart';
+import 'angular_ast_extraction.dart';
+import 'converter.dart';
+import 'file_tracker.dart';
+import 'from_file_prefixed_error.dart';
+import 'link/directive_provider.dart';
+import 'link/link.dart';
+import 'model.dart';
 import 'package:angular_analyzer_plugin/src/model/syntactic/ng_content.dart'
-    as syntactic;
-import 'package:angular_analyzer_plugin/src/model/syntactic/pipe.dart'
-    as syntactic;
-import 'package:angular_analyzer_plugin/src/model/syntactic/top_level.dart'
     as syntactic;
 import 'package:angular_analyzer_plugin/src/options.dart';
 import 'package:angular_analyzer_plugin/src/resolver/template_resolver.dart';

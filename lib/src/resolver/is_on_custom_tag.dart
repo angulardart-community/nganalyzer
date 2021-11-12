@@ -1,4 +1,4 @@
-import 'package:angular_analyzer_plugin/ast.dart';
+import '../../ast.dart';
 
 /// Custom tags shouldn't report things like unbound inputs/outputs
 bool isOnCustomTag(AttributeInfo node) {

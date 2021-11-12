@@ -1,6 +1,6 @@
 import 'package:analyzer/dart/element/element.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
+import '../model.dart';
+import '../summary/idl.dart';
 
 /// Common behavior between [EagerLinker] and [LazyLinker].
 ///

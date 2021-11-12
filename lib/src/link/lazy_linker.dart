@@ -2,19 +2,19 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/src/ignoring_error_listener.dart';
-import 'package:angular_analyzer_plugin/src/link/directive_provider.dart';
-import 'package:angular_analyzer_plugin/src/link/eager_linker.dart';
-import 'package:angular_analyzer_plugin/src/link/link.dart';
-import 'package:angular_analyzer_plugin/src/link/top_level_linker.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/lazy/component.dart' as lazy;
-import 'package:angular_analyzer_plugin/src/model/lazy/directive.dart' as lazy;
-import 'package:angular_analyzer_plugin/src/model/lazy/pipe.dart' as lazy;
-import 'package:angular_analyzer_plugin/src/selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_name_selector.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
+import '../ignoring_error_listener.dart';
+import 'directive_provider.dart';
+import 'eager_linker.dart';
+import 'link.dart';
+import 'top_level_linker.dart';
+import '../model.dart';
+import '../model/lazy/component.dart' as lazy;
+import '../model/lazy/directive.dart' as lazy;
+import '../model/lazy/pipe.dart' as lazy;
+import '../selector.dart';
+import '../selector/element_name_selector.dart';
+import '../standard_components.dart';
+import '../summary/idl.dart';
 
 /// Lazily link+resolve summaries into the resolved model.
 ///

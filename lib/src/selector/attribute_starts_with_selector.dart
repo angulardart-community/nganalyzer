@@ -1,7 +1,7 @@
-import 'package:angular_analyzer_plugin/src/selector/attribute_selector_base.dart';
-import 'package:angular_analyzer_plugin/src/selector/html_tag_for_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/name.dart';
+import 'attribute_selector_base.dart';
+import 'html_tag_for_selector.dart';
+import 'selector.dart';
+import 'name.dart';
 
 /// The [Selector] that matches elements that have an attribute with any name,
 /// and with contents that match the given regex.

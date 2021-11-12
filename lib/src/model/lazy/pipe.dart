@@ -2,7 +2,8 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/model.dart' as resolved;
+
+import '../../model.dart' as resolved;
 
 /// A [Pipe] that can be matched by its [pipeName] and then lazy-loads.
 class Pipe implements resolved.Pipe {

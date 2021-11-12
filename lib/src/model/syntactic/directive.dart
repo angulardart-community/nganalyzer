@@ -1,10 +1,10 @@
 import 'package:analyzer/src/generated/source.dart' show Source, SourceRange;
-import 'package:angular_analyzer_plugin/src/model/syntactic/annotated_class.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/content_child.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/directive_base.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/input.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/output.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import 'annotated_class.dart';
+import 'content_child.dart';
+import 'directive_base.dart';
+import 'input.dart';
+import 'output.dart';
+import '../../selector.dart';
 import 'package:meta/meta.dart';
 
 /// Syntactic model of an Angular directive.

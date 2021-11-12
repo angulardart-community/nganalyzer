@@ -4,12 +4,12 @@ import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/generated/resolver.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/resolver/angular_scope_visitor.dart';
-import 'package:angular_analyzer_plugin/src/resolver/dart_variable_manager.dart';
-import 'package:angular_analyzer_plugin/src/resolver/is_on_custom_tag.dart';
+import '../../ast.dart';
+import '../../errors.dart';
+import '../model.dart';
+import 'angular_scope_visitor.dart';
+import 'dart_variable_manager.dart';
+import 'is_on_custom_tag.dart';
 
 /// Resolve [OutputBinding]s on the attributes, and define `$event` variables.
 ///

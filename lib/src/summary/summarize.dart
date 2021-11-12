@@ -1,18 +1,18 @@
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/src/model/syntactic/annotated_class.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/component.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/content_child.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/directive.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/directive_base.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/functional_directive.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/ng_content.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/pipe.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/reference.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/top_level.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/input.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/output.dart';
-import 'package:angular_analyzer_plugin/src/summary/format.dart';
+import '../model/syntactic/annotated_class.dart';
+import '../model/syntactic/component.dart';
+import '../model/syntactic/content_child.dart';
+import '../model/syntactic/directive.dart';
+import '../model/syntactic/directive_base.dart';
+import '../model/syntactic/functional_directive.dart';
+import '../model/syntactic/ng_content.dart';
+import '../model/syntactic/pipe.dart';
+import '../model/syntactic/reference.dart';
+import '../model/syntactic/top_level.dart';
+import '../model/syntactic/input.dart';
+import '../model/syntactic/output.dart';
+import 'format.dart';
 
 /// Create a summary from the syntactic model of a dart file.
 ///

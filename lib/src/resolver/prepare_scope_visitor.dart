@@ -4,14 +4,14 @@ import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/generated/resolver.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/resolver/angular_scope_visitor.dart';
-import 'package:angular_analyzer_plugin/src/resolver/dart_variable_manager.dart';
-import 'package:angular_analyzer_plugin/src/resolver/internal_variable.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
+import '../../ast.dart';
+import '../../errors.dart';
+import '../model.dart';
+import '../model/navigable.dart';
+import 'angular_scope_visitor.dart';
+import 'dart_variable_manager.dart';
+import 'internal_variable.dart';
+import '../standard_components.dart';
 
 /// Prepare AST nodes local scopes to be resolved in more detail later.
 ///

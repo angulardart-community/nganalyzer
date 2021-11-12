@@ -1,5 +1,5 @@
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import '../../selector.dart';
 
 /// The syntactic model of an `<ng-content>` tag. Note that while the tags
 /// themselves are purely syntactic, the relationship between a component and

@@ -4,21 +4,21 @@ import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/dart/resolver/scope.dart';
 import 'package:analyzer/src/generated/source.dart' show SourceRange, Source;
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/link/binding_type_resolver.dart';
-import 'package:angular_analyzer_plugin/src/link/content_child_linker.dart';
-import 'package:angular_analyzer_plugin/src/link/directive_provider.dart';
-import 'package:angular_analyzer_plugin/src/link/export_linker.dart';
-import 'package:angular_analyzer_plugin/src/link/sub_directive_linker.dart';
-import 'package:angular_analyzer_plugin/src/link/sub_pipe_linker.dart';
-import 'package:angular_analyzer_plugin/src/link/top_level_linker.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/ng_content.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_name_selector.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
+import '../../errors.dart';
+import 'binding_type_resolver.dart';
+import 'content_child_linker.dart';
+import 'directive_provider.dart';
+import 'export_linker.dart';
+import 'sub_directive_linker.dart';
+import 'sub_pipe_linker.dart';
+import 'top_level_linker.dart';
+import '../model.dart';
+import '../model/navigable.dart';
+import '../model/syntactic/ng_content.dart';
+import '../selector.dart';
+import '../selector/element_name_selector.dart';
+import '../standard_components.dart';
+import '../summary/idl.dart';
 
 /// Eagerly link+resolve summaries into the resolved model.
 ///

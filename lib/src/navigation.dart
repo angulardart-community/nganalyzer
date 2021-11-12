@@ -5,8 +5,8 @@ import 'package:analyzer_plugin/protocol/protocol_common.dart' as protocol;
 import 'package:analyzer_plugin/protocol/protocol_constants.dart' as protocol;
 import 'package:analyzer_plugin/utilities/analyzer_converter.dart' as protocol;
 import 'package:analyzer_plugin/utilities/navigation/navigation.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/navigation_request.dart';
+import 'model.dart';
+import 'navigation_request.dart';
 
 /// Collect navigation info from a template for the IDE.
 class AngularNavigation implements NavigationContributor {

@@ -2,11 +2,11 @@ import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/generated/source.dart';
 import 'package:meta/meta.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/resolver/element_view_impl.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import '../../ast.dart';
+import '../../errors.dart';
+import '../model.dart';
+import 'element_view_impl.dart';
+import '../selector.dart';
 
 /// Visitor to check and report un-transcluded content.
 ///

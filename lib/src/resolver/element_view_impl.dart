@@ -1,6 +1,6 @@
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import '../../ast.dart';
+import '../selector.dart';
 
 /// The implementation of [ElementView] using [AttributeInfo]s.
 class ElementViewImpl implements ElementView {

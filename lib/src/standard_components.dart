@@ -4,9 +4,9 @@ import 'package:analyzer/dart/ast/visitor.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_name_selector.dart';
+import 'model.dart';
+import 'selector.dart';
+import 'selector/element_name_selector.dart';
 import 'package:meta/meta.dart';
 
 typedef CaptureAspectFn<T> = void Function(

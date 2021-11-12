@@ -3,13 +3,13 @@ import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/generated/source.dart';
 import 'package:meta/meta.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/content_child.dart';
-import 'package:angular_analyzer_plugin/src/resolver/element_view_impl.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
+import '../../ast.dart';
+import '../../errors.dart';
+import '../model.dart';
+import '../model/resolved/content_child.dart';
+import 'element_view_impl.dart';
+import '../selector.dart';
+import '../standard_components.dart';
 
 /// Resolve which directives match which tags in a template.
 ///

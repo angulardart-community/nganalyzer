@@ -1,6 +1,6 @@
 import 'package:analyzer/src/generated/source.dart' show Source;
-import 'package:angular_analyzer_plugin/src/model/syntactic/directive_base.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import 'directive_base.dart';
+import '../../selector.dart';
 
 /// The syntactic model of a functional directive declaration.
 ///

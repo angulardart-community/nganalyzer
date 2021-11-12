@@ -9,10 +9,10 @@ import 'package:analyzer/src/dart/ast/token.dart';
 import 'package:analyzer/src/dart/resolver/scope.dart';
 import 'package:analyzer/src/generated/constant.dart';
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/link/directive_provider.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
+import '../../errors.dart';
+import 'directive_provider.dart';
+import '../model.dart';
+import '../summary/idl.dart';
 
 /// Class to link the `directives:` list of a [Component] into [Directive]s.
 ///

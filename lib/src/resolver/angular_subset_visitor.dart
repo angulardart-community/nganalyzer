@@ -6,8 +6,8 @@ import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/dart/element/element.dart';
 import 'package:analyzer/src/generated/error_verifier.dart';
 import 'package:meta/meta.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
+import '../../errors.dart';
+import '../model.dart';
 
 /// Visitor to report disallowed dart expressions in a template.
 ///

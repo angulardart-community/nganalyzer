@@ -3,7 +3,7 @@ import 'package:analyzer/dart/element/type.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/dart/element/element.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
+import '../model.dart';
 
 /// Tracks variables in a [CompilationUnitElement] so analyzer APIs succeed.
 ///

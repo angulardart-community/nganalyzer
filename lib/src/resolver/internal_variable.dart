@@ -1,5 +1,5 @@
 import 'package:analyzer/dart/element/type.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
+import '../model/navigable.dart';
 
 /// An internal variable used to resolve `let-` and `#x="y"` bindings.
 ///

@@ -8,16 +8,16 @@ import 'package:analyzer/src/dart/element/inheritance_manager2.dart';
 import 'package:analyzer/src/generated/error_verifier.dart';
 import 'package:analyzer/src/generated/resolver.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/resolver/angular_scope_visitor.dart';
-import 'package:angular_analyzer_plugin/src/resolver/dart_references_recorder.dart';
-import 'package:angular_analyzer_plugin/src/resolver/is_on_custom_tag.dart';
-import 'package:angular_analyzer_plugin/src/resolver/angular_subset_visitor.dart';
-import 'package:angular_analyzer_plugin/src/resolver/angular_resolver_visitor.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
+import '../../ast.dart';
+import '../../errors.dart';
+import '../model.dart';
+import '../model/navigable.dart';
+import 'angular_scope_visitor.dart';
+import 'dart_references_recorder.dart';
+import 'is_on_custom_tag.dart';
+import 'angular_subset_visitor.dart';
+import 'angular_resolver_visitor.dart';
+import '../standard_components.dart';
 
 /// Fully resolve a single scope in an angular template.
 ///

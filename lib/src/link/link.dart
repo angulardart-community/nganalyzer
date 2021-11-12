@@ -1,7 +1,7 @@
 import 'package:analyzer/dart/element/element.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
-import 'package:angular_analyzer_plugin/src/link/top_level_linker.dart';
+import '../model.dart';
+import '../summary/idl.dart';
+import 'top_level_linker.dart';
 
 export 'package:angular_analyzer_plugin/src/link/eager_linker.dart';
 export 'package:angular_analyzer_plugin/src/link/lazy_linker.dart';

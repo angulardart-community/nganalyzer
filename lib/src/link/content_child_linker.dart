@@ -7,12 +7,12 @@ import 'package:analyzer/src/generated/constant.dart';
 import 'package:analyzer/src/generated/engine.dart';
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
 import 'package:meta/meta.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/link/binding_type_resolver.dart';
-import 'package:angular_analyzer_plugin/src/link/directive_provider.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/standard_components.dart';
-import 'package:angular_analyzer_plugin/src/summary/idl.dart';
+import '../../errors.dart';
+import 'binding_type_resolver.dart';
+import 'directive_provider.dart';
+import '../model.dart';
+import '../standard_components.dart';
+import '../summary/idl.dart';
 
 /// Helper class to create resolved [ContentChild]s from syntactic ones.
 ///

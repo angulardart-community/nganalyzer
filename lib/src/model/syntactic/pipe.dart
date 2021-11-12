@@ -1,5 +1,5 @@
 import 'package:analyzer/src/generated/source.dart' show Source, SourceRange;
-import 'package:angular_analyzer_plugin/src/model/syntactic/top_level.dart';
+import 'top_level.dart';
 
 /// The syntactic model of a pipe declaration.
 ///

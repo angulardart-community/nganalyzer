@@ -1,10 +1,10 @@
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_name_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_view.dart';
-import 'package:angular_analyzer_plugin/src/selector/selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/match.dart';
-import 'package:angular_analyzer_plugin/src/selector/name.dart';
+import '../model.dart';
+import 'element_name_selector.dart';
+import 'element_view.dart';
+import 'selector.dart';
+import 'match.dart';
+import 'name.dart';
 
 /// Base functionality for selectors that begin by finding a named attribute.
 abstract class AttributeSelectorBase extends Selector {

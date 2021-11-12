@@ -1,8 +1,8 @@
 import 'package:analyzer/src/generated/source.dart' show Source, SourceRange;
-import 'package:angular_analyzer_plugin/ast.dart';
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/component.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/resolved_range.dart';
+import '../../../ast.dart';
+import '../navigable.dart';
+import 'component.dart';
+import 'resolved_range.dart';
 
 /// An Angular template in an HTML file.
 class HtmlTemplate extends Template {

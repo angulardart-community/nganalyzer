@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:analyzer/src/summary/api_signature.dart';
-import 'package:angular_analyzer_plugin/src/options.dart';
+import 'options.dart';
 
 /// Hashing required for the [FileTracker] to be able to compute signatures.
 abstract class FileHasher {

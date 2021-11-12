@@ -3,7 +3,7 @@ import 'package:analyzer/dart/element/type.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/generated/engine.dart';
 import 'package:analyzer/src/generated/resolver.dart' show TypeProvider;
-import 'package:angular_analyzer_plugin/errors.dart';
+import '../../errors.dart';
 
 /// Resolve the best type of an `@Input()`/`@Output()` for a class context.
 ///

@@ -6,8 +6,8 @@ import 'package:analyzer/src/error/codes.dart';
 import 'package:analyzer/src/generated/resolver.dart';
 import 'package:analyzer/src/generated/source.dart';
 import 'package:meta/meta.dart';
-import 'package:angular_analyzer_plugin/errors.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
+import '../../errors.dart';
+import '../model.dart';
 
 /// The angular-plugin-specific version of analyzer's [ResolverVisitor].
 ///

@@ -1,5 +1,5 @@
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
+import '../navigable.dart';
 
 /// A pair of an [SourceRange] and the referenced [Navigable].
 ///

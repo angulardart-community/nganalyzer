@@ -1,4 +1,4 @@
-import 'package:angular_analyzer_plugin/ast.dart';
+import '../../ast.dart';
 
 /// Extract [localVariables] from target node if it has any.
 class LocalVariablesExtractor implements AngularAstVisitor {

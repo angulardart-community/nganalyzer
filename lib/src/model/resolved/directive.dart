@@ -1,13 +1,13 @@
 import 'package:analyzer/dart/ast/ast.dart' as dart;
 import 'package:analyzer/dart/element/element.dart' as dart;
 import 'package:analyzer/dart/element/type.dart' as dart;
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/annotated_class.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/content_child.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/directive_base.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/input.dart';
-import 'package:angular_analyzer_plugin/src/model/resolved/output.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import '../navigable.dart';
+import 'annotated_class.dart';
+import 'content_child.dart';
+import 'directive_base.dart';
+import 'input.dart';
+import 'output.dart';
+import '../../selector.dart';
 import 'package:meta/meta.dart';
 
 /// Resolved model of an Angular directive. This excludes functional

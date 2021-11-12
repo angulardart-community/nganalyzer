@@ -1,6 +1,6 @@
 import 'package:analyzer/dart/element/element.dart' as dart;
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:angular_analyzer_plugin/src/model/syntactic/reference.dart';
+import '../syntactic/reference.dart';
 
 /// A referenced identifier that is exported to the template. Simply represented
 /// by offset information and a backing dart [Element].

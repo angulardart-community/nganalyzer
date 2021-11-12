@@ -1,18 +1,18 @@
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/selector/and_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/attribute_contains_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/attribute_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/attribute_starts_with_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/attribute_value_regex_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/class_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/contains_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/element_name_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/name.dart';
-import 'package:angular_analyzer_plugin/src/selector/not_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/or_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/parse_error.dart';
-import 'package:angular_analyzer_plugin/src/selector/selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/tokenizer.dart';
+import 'and_selector.dart';
+import 'attribute_contains_selector.dart';
+import 'attribute_selector.dart';
+import 'attribute_starts_with_selector.dart';
+import 'attribute_value_regex_selector.dart';
+import 'class_selector.dart';
+import 'contains_selector.dart';
+import 'element_name_selector.dart';
+import 'name.dart';
+import 'not_selector.dart';
+import 'or_selector.dart';
+import 'parse_error.dart';
+import 'selector.dart';
+import 'tokenizer.dart';
 
 /// A parser for CSS [Selector]s.
 class SelectorParser with ReportParseErrors {

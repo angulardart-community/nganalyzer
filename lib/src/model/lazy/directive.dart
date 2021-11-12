@@ -1,9 +1,9 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/src/generated/source.dart' show Source;
-import 'package:angular_analyzer_plugin/src/model.dart' hide Directive;
-import 'package:angular_analyzer_plugin/src/model.dart' as resolved;
-import 'package:angular_analyzer_plugin/src/model/navigable.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import '../../model.dart' hide Directive;
+import '../../model.dart' as resolved;
+import '../navigable.dart';
+import '../../selector.dart';
 
 /// A [Directive] that can be matched by its [selector] and then lazy-loads.
 ///

@@ -1,4 +1,4 @@
-import 'package:angular_analyzer_plugin/ast.dart';
+import '../../ast.dart';
 
 /// A resolve visitor that understands & handles angular scopes.
 ///

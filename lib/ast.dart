@@ -1,8 +1,8 @@
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/src/generated/source.dart';
-import 'package:angular_analyzer_plugin/src/model.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import 'src/model.dart';
+import 'src/selector.dart';
 import 'package:meta/meta.dart';
 
 /// A node in the plugin's template/html/angular binding AST.

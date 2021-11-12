@@ -1,5 +1,5 @@
-import 'package:angular_analyzer_plugin/src/selector/parse_error.dart';
-import 'package:angular_analyzer_plugin/src/selector/regex.dart' as regex;
+import 'parse_error.dart';
+import 'regex.dart' as regex;
 
 /// A token from tokenizing CSS via regex.
 class Token {

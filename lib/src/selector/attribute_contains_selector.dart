@@ -1,6 +1,6 @@
-import 'package:angular_analyzer_plugin/src/selector/attribute_selector_base.dart';
-import 'package:angular_analyzer_plugin/src/selector/html_tag_for_selector.dart';
-import 'package:angular_analyzer_plugin/src/selector/name.dart';
+import 'attribute_selector_base.dart';
+import 'html_tag_for_selector.dart';
+import 'name.dart';
 
 /// The [AttributeContainsSelector] that matches elements that have attributes
 /// with the given name, and that attribute contains the value of the selector.

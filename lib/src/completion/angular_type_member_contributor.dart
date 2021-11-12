@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:analyzer_plugin/src/utilities/completion/completion_core.dart';
 import 'package:analyzer_plugin/utilities/completion/completion_core.dart';
 import 'package:analyzer_plugin/utilities/completion/type_member_contributor.dart';
-import 'package:angular_analyzer_plugin/src/completion/request.dart';
-import 'package:angular_analyzer_plugin/src/completion/dart_resolve_result_shell.dart';
-import 'package:angular_analyzer_plugin/ast.dart';
+import 'request.dart';
+import 'dart_resolve_result_shell.dart';
+import '../../ast.dart';
 
 /// Completion contributor for typed members in an angular context.
 ///

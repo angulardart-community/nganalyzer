@@ -1,12 +1,12 @@
 import 'package:analyzer/src/generated/source.dart' show Source;
 import 'package:analyzer/src/generated/source.dart' show Source, SourceRange;
-import 'package:angular_analyzer_plugin/src/model/syntactic/content_child.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/directive.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/input.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/ng_content.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/output.dart';
-import 'package:angular_analyzer_plugin/src/model/syntactic/reference.dart';
-import 'package:angular_analyzer_plugin/src/selector.dart';
+import 'content_child.dart';
+import 'directive.dart';
+import 'input.dart';
+import 'ng_content.dart';
+import 'output.dart';
+import 'reference.dart';
+import '../../selector.dart';
 import 'package:meta/meta.dart';
 
 /// Syntactic model of an Angular component.
