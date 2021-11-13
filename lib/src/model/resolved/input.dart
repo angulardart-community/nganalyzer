@@ -2,8 +2,7 @@ import 'package:analyzer/dart/element/element.dart' as dart;
 import 'package:analyzer/dart/element/type.dart' as dart;
 import 'package:analyzer/src/generated/source.dart' show SourceRange, Source;
 import '../navigable.dart';
-import 'package:nganalyzer/src/model/syntactic/input.dart'
-    as syntactic;
+import 'package:nganalyzer/src/model/syntactic/input.dart' as syntactic;
 import 'package:nganalyzer/src/standard_components.dart';
 import 'package:meta/meta.dart';
 

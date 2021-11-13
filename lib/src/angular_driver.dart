@@ -23,8 +23,7 @@ import 'from_file_prefixed_error.dart';
 import 'link/directive_provider.dart';
 import 'link/link.dart';
 import 'model.dart';
-import 'package:nganalyzer/src/model/syntactic/ng_content.dart'
-    as syntactic;
+import 'package:nganalyzer/src/model/syntactic/ng_content.dart' as syntactic;
 import 'package:nganalyzer/src/options.dart';
 import 'package:nganalyzer/src/resolver/template_resolver.dart';
 import 'package:nganalyzer/src/standard_components.dart';

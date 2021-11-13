@@ -1,0 +1,19 @@
+name: Dart Ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@latest
+      - uses: dart-lang/setup-dart@latest
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Run tests
+        run: dart --no-sound-null-safety test

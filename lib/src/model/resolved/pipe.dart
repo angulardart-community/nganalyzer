@@ -1,8 +1,7 @@
 import 'package:analyzer/dart/element/element.dart' as dart;
 import 'package:analyzer/dart/element/type.dart' as dart;
 import 'package:analyzer/src/generated/source.dart' show SourceRange;
-import 'package:nganalyzer/src/model/syntactic/pipe.dart'
-    as syntactic;
+import 'package:nganalyzer/src/model/syntactic/pipe.dart' as syntactic;
 import 'package:meta/meta.dart';
 
 /// The resolved model of a pipe declaration.
