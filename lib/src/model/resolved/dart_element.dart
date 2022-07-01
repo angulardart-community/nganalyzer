@@ -1,5 +1,4 @@
 import 'package:analyzer/dart/element/element.dart' as dart;
-import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/generated/source.dart';
 
 import '../navigable.dart';

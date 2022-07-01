@@ -5,7 +5,6 @@ import 'package:nganalyzer/src/model.dart';
 import 'package:nganalyzer/src/model/navigable.dart';
 import 'package:nganalyzer/src/selector.dart';
 import 'package:test/test.dart';
-import 'package:matcher/matcher.dart';
 
 // ignore_for_file: deprecated_member_use
 

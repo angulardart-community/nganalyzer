@@ -6,7 +6,6 @@ import 'package:meta/meta.dart';
 import '../../ast.dart';
 import '../../errors.dart';
 import '../model.dart';
-import '../model/resolved/content_child.dart';
 import 'element_view_impl.dart';
 import '../selector.dart';
 import '../standard_components.dart';

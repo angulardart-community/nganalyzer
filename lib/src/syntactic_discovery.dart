@@ -2,7 +2,6 @@ import 'package:analyzer/dart/ast/ast.dart' as ast;
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/dart/ast/utilities.dart' as utils;
-import 'package:analyzer/src/generated/engine.dart';
 import 'package:analyzer/src/generated/source.dart';
 import '../errors.dart';
 import '../ast.dart';

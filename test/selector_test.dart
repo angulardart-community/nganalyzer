@@ -11,7 +11,6 @@ import 'package:nganalyzer/src/selector/class_selector.dart';
 import 'package:nganalyzer/src/selector/contains_selector.dart';
 import 'package:nganalyzer/src/selector/element_name_selector.dart';
 import 'package:nganalyzer/src/selector/html_tag_for_selector.dart';
-import 'package:nganalyzer/src/selector/name.dart';
 import 'package:nganalyzer/src/selector/not_selector.dart';
 import 'package:nganalyzer/src/selector/or_selector.dart';
 import 'package:mockito/mockito.dart';
