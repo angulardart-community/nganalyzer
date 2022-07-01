@@ -1,4 +1,3 @@
-import 'package:analyzer/src/generated/source.dart' show Source;
 import 'package:analyzer/src/generated/source.dart' show Source, SourceRange;
 import 'content_child.dart';
 import 'directive.dart';

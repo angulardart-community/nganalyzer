@@ -18,7 +18,6 @@ import 'package:nganalyzer/src/selector/and_selector.dart';
 import 'package:nganalyzer/src/selector/element_name_selector.dart';
 import 'package:angular_ast/angular_ast.dart';
 import 'package:test/test.dart';
-import 'package:matcher/matcher.dart';
 import 'package:test_reflective_loader/test_reflective_loader.dart';
 
 import 'angular_driver_base.dart';
