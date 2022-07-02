@@ -1,4 +1,5 @@
 import 'package:analyzer/dart/element/type.dart';
+import 'package:analyzer/dart/element/type_system.dart';
 import 'package:analyzer/error/error.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/src/generated/source.dart';
@@ -213,8 +214,12 @@ class _MatchContentChildQueryVisitor implements QueriedChildTypeVisitor<bool> {
   final StandardHtml standardHtml;
   final ErrorReporter errorReporter;
 
-  _MatchContentChildQueryVisitor(this.element, this.standardAngular,
-      this.standardHtml, this.errorReporter);
+  _MatchContentChildQueryVisitor(
+    this.element,
+    this.standardAngular,
+    this.standardHtml,
+    this.errorReporter,
+  );
 
   @override
   bool visitDirectiveQueriedChildType(DirectiveQueriedChildType query) =>
@@ -284,13 +289,17 @@ class _MatchContentChildQueryVisitor implements QueriedChildTypeVisitor<bool> {
       }
     }
 
+	final TypeSystem typeSystem = standardAngular.component.context.typeSystem;
+
     // Don't do isAssignable. Because we KNOW downcasting makes no sense here.
-    if (!matchTypes.any(query.containerType.isSupertypeOf)) {
+    // if (!matchTypes.any(query.containerType.isSupertypeOf)) {
+    if (!matchTypes.any((element) => typeSystem.isSubtypeOf(element, query.containerType))) {
       errorReporter.reportErrorForOffset(
-          AngularWarningCode.MATCHED_LET_BINDING_HAS_WRONG_TYPE,
-          element.offset,
-          element.length,
-          [query.letBoundName, query.containerType, matchTypes]);
+        AngularWarningCode.MATCHED_LET_BINDING_HAS_WRONG_TYPE,
+        element.offset,
+        element.length,
+        [query.letBoundName, query.containerType, matchTypes],
+      );
     }
   }
 

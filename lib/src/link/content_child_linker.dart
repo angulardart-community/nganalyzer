@@ -1,6 +1,7 @@
 import 'package:analyzer/dart/constant/value.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
+import 'package:analyzer/dart/element/type_system.dart';
 import 'package:analyzer/error/listener.dart';
 import 'package:analyzer/source/source_range.dart';
 import 'package:analyzer/src/generated/constant.dart';
@@ -71,14 +72,20 @@ class ContentChildLinker {
     final value = _getSelectorWithInheritance(annotationValue);
     final read = _getReadWithInheritance(annotationValue);
     final transformedType = setterTransform(
-        bindingSynthesizer.getSetterType(member),
-        contentChildField,
-        annotationName,
-        classElement.context);
+      bindingSynthesizer.getSetterType(member),
+      contentChildField,
+      annotationName,
+      classElement.context,
+    );
 
     if (read != null) {
-      _checkQueriedTypeAssignableTo(transformedType, read, contentChildField,
-          '$annotationName(read: $read)');
+      _checkQueriedTypeAssignableTo(
+        transformedType,
+        read,
+        contentChildField,
+        '$annotationName(read: $read)',
+        classElement.context.typeSystem,
+      );
     }
 
     if (value?.toStringValue() != null) {
@@ -101,6 +108,7 @@ class ContentChildLinker {
         valueType: value.toTypeValue(),
         nameRange: nameRange,
         typeRange: typeRange,
+        typeSystem: classElement.context.typeSystem,
       );
     } else {
       _errorReporter.reportErrorForOffset(
@@ -163,6 +171,7 @@ class ContentChildLinker {
     @required DartType valueType,
     @required SourceRange nameRange,
     @required SourceRange typeRange,
+    @required TypeSystem typeSystem,
   }) {
     final referencedDirective = _directiveProvider
         .getAngularTopLevel(valueType.element as ClassElement) as Directive;
@@ -184,18 +193,27 @@ class ContentChildLinker {
     }
 
     _checkQueriedTypeAssignableTo(
-        transformedType, read ?? valueType, contentChildField, annotationName);
+      transformedType,
+      read ?? valueType,
+      contentChildField,
+      annotationName,
+      typeSystem,
+    );
 
     return ContentChild(contentChildField.fieldName,
         query: query, read: read, typeRange: typeRange, nameRange: nameRange);
   }
 
   void _checkQueriedTypeAssignableTo(
-      DartType setterType,
-      DartType annotatedType,
-      SummarizedContentChildField field,
-      String annotationName) {
-    if (setterType != null && !setterType.isSupertypeOf(annotatedType)) {
+    DartType setterType,
+    DartType annotatedType,
+    SummarizedContentChildField field,
+    String annotationName,
+    TypeSystem typeSystem,
+  ) {
+    // if (setterType != null && !setterType.isSupertypeOf(annotatedType)) {
+    if (setterType != null &&
+        !typeSystem.isSubtypeOf(annotatedType, setterType)) {
       _errorReporter.reportErrorForOffset(
           AngularWarningCode.INVALID_TYPE_FOR_CHILD_QUERY,
           field.typeOffset,
@@ -253,16 +271,18 @@ class ContentChildLinker {
       _getFieldWithInheritance(value, 'selector');
 
   DartType _transformSetterTypeMultiple(
-      DartType setterType,
-      SummarizedContentChildField field,
-      String annotationName,
-      AnalysisContext context) {
+    DartType setterType,
+    SummarizedContentChildField field,
+    String annotationName,
+    AnalysisContext context,
+  ) {
     // construct List<Bottom>, which is a subtype of all List<T>
     final typeProvider = context.typeProvider;
     final listBottom =
         typeProvider.listType.instantiate([typeProvider.bottomType]);
 
-    if (!setterType.isSupertypeOf(listBottom)) {
+    // if (!setterType.isSupertypeOf(listBottom)) {
+    if (!context.typeSystem.isSubtypeOf(listBottom, setterType)) {
       _errorReporter.reportErrorForOffset(
           AngularWarningCode.CONTENT_OR_VIEW_CHILDREN_REQUIRES_LIST,
           field.typeOffset,
@@ -281,9 +301,10 @@ class ContentChildLinker {
   }
 
   DartType _transformSetterTypeSingular(
-          DartType setterType,
-          SummarizedContentChildField field,
-          String annotationName,
-          AnalysisContext analysisContext) =>
+    DartType setterType,
+    SummarizedContentChildField field,
+    String annotationName,
+    AnalysisContext analysisContext,
+  ) =>
       setterType;
 }

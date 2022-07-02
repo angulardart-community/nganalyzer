@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:analyzer/dart/element/type_system.dart';
 import 'package:analyzer/src/generated/resolver.dart' show TypeProvider;
 import 'package:analyzer_plugin/protocol/protocol_common.dart'
     hide AnalysisError;
@@ -46,6 +47,8 @@ class TemplateCompleter {
   ) async {
     final typeProvider = template.component.classElement.enclosingElement
         .enclosingElement.context.typeProvider;
+    final typeSystem = template.component.classElement.enclosingElement
+        .enclosingElement.context.typeSystem;
     final dartSnippet = request.dartSnippet;
     final target = request.angularTarget;
 
@@ -74,6 +77,7 @@ class TemplateCompleter {
           standardHtmlAttributes,
           target.boundStandardInputs,
           typeProvider,
+          typeSystem,
           includePlainAttributes: true,
         );
         suggestOutputs(
@@ -127,12 +131,14 @@ class TemplateCompleter {
       if (_suggestInputs) {
         _suggestBananas = target.nameOffset == request.offset;
         suggestInputs(
-            target.parent.boundDirectives,
-            collector,
-            standardHtmlAttributes,
-            target.parent.boundStandardInputs,
-            typeProvider,
-            currentAttr: target);
+          target.parent.boundDirectives,
+          collector,
+          standardHtmlAttributes,
+          target.parent.boundStandardInputs,
+          typeProvider,
+          typeSystem,
+          currentAttr: target,
+        );
       }
       if (_suggestBananas) {
         suggestBananas(
@@ -163,12 +169,14 @@ class TemplateCompleter {
       if (offsetContained(
           request.offset, target.nameOffset, target.name.length)) {
         suggestInputs(
-            target.parent.boundDirectives,
-            collector,
-            standardHtmlAttributes,
-            target.parent.boundStandardInputs,
-            typeProvider,
-            includePlainAttributes: true);
+          target.parent.boundDirectives,
+          collector,
+          standardHtmlAttributes,
+          target.parent.boundStandardInputs,
+          typeProvider,
+          typeSystem,
+          includePlainAttributes: true,
+        );
         suggestOutputs(target.parent.boundDirectives, collector,
             standardHtmlEvents, target.parent.boundStandardOutputs);
         suggestBananas(
@@ -312,7 +320,8 @@ class TemplateCompleter {
     CompletionCollector collector,
     Set<Input> standardHtmlAttributes,
     List<InputBinding> boundStandardAttributes,
-    TypeProvider typeProvider, {
+    TypeProvider typeProvider,
+    TypeSystem typeSystem, {
     ExpressionBoundAttribute currentAttr,
     bool includePlainAttributes = false,
   }) {
@@ -329,8 +338,10 @@ class TemplateCompleter {
         }
 
         if (includePlainAttributes && typeProvider != null) {
-          if (typeProvider.stringType.isAssignableTo(input.setterType)) {
-            // if (TypeSystem().isAssignableTo(typeProvider.stringType, input.setterType)) {
+          if (typeSystem.isAssignableTo(
+            typeProvider.stringType,
+            input.setterType,
+          )) {
             final relevance = input.setterType.displayName == 'String'
                 ? DART_RELEVANCE_DEFAULT
                 : DART_RELEVANCE_DEFAULT - 1;
@@ -361,7 +372,10 @@ class TemplateCompleter {
         continue;
       }
       if (includePlainAttributes && typeProvider != null) {
-        if (typeProvider.stringType.isAssignableTo(input.setterType)) {
+        if (typeSystem.isAssignableTo(
+          typeProvider.stringType,
+          input.setterType,
+        )) {
           final relevance = input.setterType.displayName == 'String'
               ? DART_RELEVANCE_DEFAULT - 2
               : DART_RELEVANCE_DEFAULT - 3;
