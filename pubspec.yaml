@@ -21,9 +21,3 @@ dev_dependencies:
   mockito: ^3.0.0
   test: ^1.2.0
   test_reflective_loader: ^0.1.0
-
-# === vvv REMOVE WHEN PUBLISHING vvv ===
-# dependency_overrides:
-#   angular_ast:
-#       path: ../angular_ast
-# === ^^^ REMOVE WHEN PUBLISHING ^^^ ===

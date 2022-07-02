@@ -193,6 +193,7 @@ class _AbstractElementAssert {
   Source _source;
   String _code;
 
+  // ignore: unused_element
   _AbstractElementAssert([this._source, this._code]);
 
   void _at(int actualOffset, String search) {
